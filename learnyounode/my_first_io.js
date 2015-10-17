@@ -1,18 +1,6 @@
-//This program basically outputs the number of lines in this file to the terminal. Nice.
+var fs = require('fs')                               		// This imports the fs lib.
 
-var fs = require('fs')
+var contents = fs.readFileSync(process.argv[2])     		// This declares a var called 'contents' and puts in it the third arg given to this program by calling the readFileSync module within the fs lib. 
+var lines = contents.toString().split('\n').length - 1		// This takes 'contents' and weeds out all the new line chars, then counts them and subtracts one... since there is always one additional \n
 
-var contents = fs.readFileSync(process.argv[2])
-var lines = contents.toString().split('\n').length - 1
-console.log(lines)
-
-/*
-var fs = require('fs');
-
-var filename = process.argv[2]
-var buf = fs.readFileSync(filename)
-var str = buf.toString();
-var count = str.split('\n').length
-
-console.log(count - 1)
-*/
+console.log(lines)                                    		// This obviously just logs the count of lines in the file.
