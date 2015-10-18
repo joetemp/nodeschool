@@ -1,10 +1,10 @@
-
+var fs = require('fs')                                              // 1
 var file = process.argv[2]                                          // 2
 
 fs.readFile(file, function (err, contents) {                        // 3 
 	// fs.readFile(file, 'utf8', callback) can also be used
     var lines = contents.toString().split('\n').length - 1          // 4 
-	console.log(lines)                                              // 5 
+	console.log(lines)                                          // 5 
 })
 
 // Notes
@@ -16,5 +16,4 @@ fs.readFile(file, function (err, contents) {                        // 3
 	  with the contents of the file and they will be routed into the var. */
 // 4. This takes what readFile routed to 'contents' and turns it into a string. Then weeds out all the newlines, counts them and subtracts one.
 // 5. This prints it all to the console.
-
 
