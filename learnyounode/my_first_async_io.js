@@ -1,6 +1,6 @@
-var fs = require('fs')                                    			// This imports the fs lib.
+var fs = require('fs')												// This imports the fs lib.
 
-var file = process.argv[2]                                 			/* This declares a variable called 'file' that holds the third 
+var file = process.argv[2]											/* This declares a variable called 'file' that holds the third 
 																	   arg given to this program.*/
 
 fs.readFile(file, function (err, contents) {						/* This calls the readFile module within the fs lib. It give it a 
