@@ -1,4 +1,4 @@
-var fs = require('fs')                                              // 1
+
 var file = process.argv[2]                                          // 2
 
 fs.readFile(file, function (err, contents) {                        // 3 
