@@ -1,10 +1,10 @@
-var fs = require('fs')												// 1
-var file = process.argv[2]											// 2
+var fs = require('fs')                                              // 1
+var file = process.argv[2]                                          // 2
 
-fs.readFile(file, function (err, contents) {						// 3 
+fs.readFile(file, function (err, contents) {                        // 3 
 	// fs.readFile(file, 'utf8', callback) can also be used
-    var lines = contents.toString().split('\n').length - 1			// 4 
-	console.log(lines)												// 5
+    var lines = contents.toString().split('\n').length - 1          // 4 
+	console.log(lines)                                              // 5
 })
 
 // Notes
