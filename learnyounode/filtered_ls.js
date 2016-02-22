@@ -10,7 +10,7 @@ fs.readdir(process.argv[2], function (err, list) {          // 3
 
 // Notes
 
-// 1. This delcares a variable that holes/imports the fs lib.
+// 1. This delcares a variable that holds/imports the fs lib.
 // 2. This declares a variable that holds/imports the path lib. 
 /* 3. This calls the readdir module within the fs lib. It takes the third command line argument as its first parameter. It takes a newly  
       created callback function as it's second param. As with all callback functions, this one has two parameters. The first one is there to 
