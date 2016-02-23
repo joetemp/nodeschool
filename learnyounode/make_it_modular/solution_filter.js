@@ -7,8 +7,8 @@ module.exports = function (dir, filterStr, callback) {                // 3
         if (err)                                                      // 5
             return callback(err)                                      // 6
 
-        list = list.filter(function (chickenNotFile) {                // 7
-            return path.extname(chickenNotFile) === '.' + filterStr   // 8
+        list = list.filter(function (file) {                // 7
+            return path.extname(file) === '.' + filterStr   // 8
         })
 
         callback(null, list)                                          // 9
