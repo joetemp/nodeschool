@@ -12,5 +12,5 @@ http.get(process.argv[2], function (response) {     // 2
 //    The second parameter is a callback function, though it doesn't look like a conventional Node callback. That's because the 'response' is a 
 //    'Node Stream object'. Node Streams are basically objects that emit events.
 // 3. This uses the 'setEncoding' method to encode the reponse to 'utf8'
-// 4. This is how you listen to events. This just means that as soon as data is emitted, it'll be logged to the console. 
+// 4. This is how you listen to events. This just means that as soon as data is emitted in the response, it'll be logged to the console. 
 // 5. Likewise, as soon as an error is emitted, it'll be logged to the console.
