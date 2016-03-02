@@ -18,7 +18,7 @@ http.get(process.argv[2], function (response) {     // 3
       second param is a callback function that takes a Node Stream object as a param. */
 // 4. This takes the reponse and pipes it into the 'bl' module. Once there, bl takes a callback function as a parameter.
 // 5. If there's an error...
-// 6. This returns said error to the console.
+// 6. This logs the error to the console and haults the function with the return.
 // 7. This takes the now data, which was the repsonse piped into bl, and changes it's value to a string. 
 // 8. This logs the length of data... which is now a string, to the console. The length is in characters. 
 // 9. This logs data... which is now a string, to the console. 
